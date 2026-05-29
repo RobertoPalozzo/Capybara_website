@@ -1,1 +1,217 @@
+<!-- DOCTYPE HTML: VERSION 1.0 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Capybara World</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
+    nav {
+      background-color: #4a7c59;
+      padding: 10px 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background-color: #6b4f3a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    div.section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #4a7c59;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f0f0f0;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4a7c59;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3a6347;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer a {
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#facts">Facts</a>
+    <a href="#links">Links</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Capybara World</h1>
+    <p>Your guide to the world's largest rodent</p>
+  </header>
+
+  <main>
+
+    <div class="section" id="about">
+      <h2>About Capybaras</h2>
+      <p>Capybaras are the largest rodents in the world. They are native to South America and love to swim. They are very social animals and are known for being extremely calm and friendly.</p>
+
+      <h3>Where They Live</h3>
+      <p>Capybaras live near rivers, lakes, and wetlands across South America, including Brazil, Venezuela, Colombia, and Argentina.</p>
+
+      <h3>What They Eat</h3>
+      <p>They are herbivores and mainly eat grasses and aquatic plants. They graze in the morning and evening to avoid the hottest parts of the day.</p>
+    </div>
+
+    <div class="section" id="gallery">
+      <h2>Gallery</h2>
+
+      <p>A regular image:</p>
+      <img src="https://cyberbilby.com/capybara.jpg" alt="A capybara" width="300">
+
+      <p>A clickable image link:</p>
+      <a href="https://en.wikipedia.org/wiki/Capybara">
+        <img src="https://cyberbilby.com/capybara.jpg" alt="Click to learn more" width="300">
+      </a>
+    </div>
+
+    <div class="section" id="facts">
+      <h2>Quick Facts</h2>
+      <table>
+        <tr>
+          <th>Attribute</th>
+          <th>Detail</th>
+        </tr>
+        <tr>
+          <td>Weight</td>
+          <td>35 – 65 kg</td>
+        </tr>
+        <tr>
+          <td>Length</td>
+          <td>106 – 134 cm</td>
+        </tr>
+        <tr>
+          <td>Lifespan</td>
+          <td>6 – 12 years</td>
+        </tr>
+        <tr>
+          <td>Diet</td>
+          <td>Herbivore</td>
+        </tr>
+        <tr>
+          <td>Habitat</td>
+          <td>South America</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section" id="links">
+      <h2>Useful Links</h2>
+      <p>Learn more about capybaras from these resources:</p>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Capybara">Wikipedia — Capybara</a></li>
+        <li><a href="https://www.worldwildlife.org/">World Wildlife Fund</a></li>
+        <li><a href="https://www.nationalgeographic.com/">National Geographic</a></li>
+      </ul>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p>Have a question or a capybara story to share? Fill in the form below.</p>
+
+      <form>
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Your name">
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="your@email.com">
+
+        <label>Topic:</label>
+        <select name="topic">
+          <option>General Question</option>
+          <option>Wildlife Sighting</option>
+          <option>Feedback</option>
+        </select>
+
+        <label>Message:</label>
+        <textarea name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Capybara World</p>
+    <p><a href="#about">About</a> | <a href="#gallery">Gallery</a> | <a href="#contact">Contact</a></p>
+  </footer>
+
+</body>
+</html>
