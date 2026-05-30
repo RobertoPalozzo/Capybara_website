@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Complete Website</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            padding-top: 0px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            width: 100%;
+            background-color: #773f3b;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 0;
+        }
+        .container nav {
+            width: 100%;
+            background-color: rgb(64, 102, 64);
+        }
+        .container {
+            box-sizing: border-box;
+            max-width: 1000px;
+            padding: 30px;
+            border: 1px solid #ddd;
+            background-color: white;
+            margin: 30px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 1rem;
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+        }
+        th {
+            background-color: rgb(64, 102, 64);
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        nav {
+            width: 100%;
+            background-color: rgb(64, 102, 64);
+            color: white;
+            padding: 0.5rem;
+            text-align: left;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+        nav div {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 1000px) {
+            nav div {
+                margin: 0;
+            }
+            main {
+                padding: 0;
+            }
+            .container {
+                margin: 5px 0;
+                border-left: none;
+                border-right: none;
+            }
+        }
+    </style>
+</head>
+
+<body>   
+    <nav>
+        <div>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#facts">Facts</a>
+            <a href="#links">Links</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+   
+    <header>
+        <h1>Capybara World</h1>
+        <p>Your guide to the world's largest rodent</p>
+    </header>
+    
+  
+    <main>
+        <div class="container" id="about">
+            <h2>About Capybaras</h2>
+            <p>Capybaras are the largest rodents in the world. They are native to South America and love to swim. They are very social animals and are known for being extremely calm and friendly.</p>
+            <h3>Where They Live</h3>
+            <p>Capybaras live near rivers, lakes, and wetlands across South America, including Brazil, Venezuela, Colombia, and Argentina.</p>
+            <h3>What They Eat</h3>
+            <p>They are herbivores and mainly eat grasses and aquatic plants. They graze in the morning and evening to avoid the hottest parts of the day.</p>
+        </div>
+
+        <div class="container" id="gallery">
+            <section >
+                <h2>Gallery</h2>
+                <p>A regular image:</p>
+                <img src="https://cyberbilby.com/capybara.jpg" alt="Capybara" width="300px">
+                <p>A clickable image link:</p>
+                <a href="https://en.wikipedia.org/wiki/Capybara"><img src="https://cyberbilby.com/capybara.jpg" alt="Capybara" width="300px"></a>
+            </section>
+        </div>
+        <div class="container" id="facts">
+            <h2>Quick Facts</h2>
+            <table>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Detail</th>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td>35 - 65 kg</td>
+                </tr>
+                <tr>
+                    <td>Length</td>
+                    <td>106 - 134 cm</td>
+                </tr>
+                <tr>
+                    <td>Lifespan</td>
+                    <td>6 - 12 years</td>
+                </tr>
+                <tr>
+                    <td>Diet</td>
+                    <td>Herbivore</td>
+                </tr>
+                <tr>
+                    <td>Habitat</td>
+                    <td>South America</td>
+                </tr>
+            </table>
+        </div>
+        <div class="container" id="links">
+            <h2>Useful Links</h2>
+            <p>Learn more about capybaras from these resources:</p>
+        </div>
+        <div class="container" id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out via email at contact@mywebsite.com.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Complete Website. All rights reserved.</p>
+    </footer>
+<script>function updateScrollMargin() {
+    const navHeight = document.querySelector('nav').offsetHeight;
+    document.querySelectorAll('.container').forEach(s => {
+        s.style.scrollMarginTop = navHeight + 'px';
+    });
+    document.querySelector('header').style.marginTop = navHeight + 'px';
+}
+window.addEventListener('resize', updateScrollMargin);
+updateScrollMargin();
+</script>
+</body>
+</html>
